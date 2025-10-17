@@ -1,0 +1,286 @@
+/* Universal section  */
+* {
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------- */
+
+/* header part  */
+.heading {
+    background-color: teal;
+}
+
+.container {
+    margin: 0 auto;
+    width: 41%;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+.left {
+    float: left;
+    width: 25%;
+}
+
+.left .icon {
+    width: 81%;
+}
+
+.right {
+    float: left;
+    width: 75%;
+    padding-left: 0%;
+    margin-left: -16px;
+}
+
+.right span {
+    display: inline-block;
+    margin: 16px 0px;
+    font-size: 32px;
+    color: white;
+}
+
+/* -------------------------------------------- */
+
+/* navigation bar  */
+.navbar {
+    background-color: rgb(40, 145, 145);
+}
+
+.options {
+    overflow: auto;
+    list-style: none;
+    margin: 0px;
+}
+
+.options li {
+    float: left;
+    padding: 6px 10px;
+}
+
+.options li a {
+    text-decoration: none;
+    color: white;
+}
+
+.options li a:hover {
+    color: rgb(40, 145, 145);
+}
+
+.options li:hover {
+    background-color: white;
+}
+
+.options li .active {
+    font-weight: bolder;
+}
+
+.navright {
+    float: right;
+    padding: 4px 22px;
+}
+
+.navright input[type=search] {
+    /* padding: auto; */
+    width: 182px;
+}
+
+.listing span
+{
+    float: left;
+    padding: 6px 10px;
+    padding-left: 0px;
+    color: white;
+}
+
+.listing .flagicon
+{
+    float: left;
+    margin: 1px 3px;
+    width: 42px;
+    border: 2px solid silver;
+}
+
+/* -------------------------------------------- */
+
+/* mainpage (login) */
+.login {
+    margin: auto;
+    width: 50%;
+    margin-top: 28px;
+}
+
+.page {
+    width: 100%;
+    max-width: 900px;
+    background: color-mix(in srgb, teal 30%, white 70%);
+    padding: 30px;
+    /* border-radius: 15px; */
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); */
+    animation: fadeIn 1s ease forwards;
+}
+
+h2 {
+    text-align: center;
+    color: teal;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease forwards;
+}
+
+h3 {
+    color: teal;
+    margin-top: 20px;
+    border-bottom: 2px solid teal;
+    padding-bottom: 5px;
+}
+
+.c_loginlabel {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: teal;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid gray;
+    /* border-radius: 8px; */
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: teal;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+}
+
+button {
+    background-color: teal;
+    color: white;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: medium;
+    /* border-radius: 8px; */
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    /* animation: bounce 1s infinite; */
+}
+
+button:hover {
+    background-color: white;
+    color: teal;
+}
+
+/* -------------------------------------------- */
+
+/* mainpage (portfolio) */
+
+#portfolioPage
+{
+    float:left;
+    width:50%;
+}
+
+#portfolioPreview {
+    float: left;
+    width: 50%;
+    /* margin-top: 40px; */
+    padding: 25px;
+    /* border-radius: 12px; */
+    background: #f0f4f8;
+    animation: fadeIn 1s ease forwards;
+}
+
+.ImagePreview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid teal;
+    animation: popIn 0.5s ease forwards;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: color-mix(in srgb, teal 30%, white 70%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* -------------------------------------------- */
+
+/* Language */
+.Lang1
+{
+    list-style: none;
+}
+
+.Lang1 li
+{
+    display: inline;
+    padding: 0px 5px;
+}
+
+
+
+.c_flagicon2
+{
+    width:14%;
+    border: 3px solid silver;
+}
