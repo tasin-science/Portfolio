@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="my_web" content="this is my website">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/ko_font.css">
+    <script src="JS/main_ko.js"></script>
+
+    <title>로그인 페이지</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="container">
+            <div class="left">
+                <img class="icon" src="SRC/ScienceMe_profilE.png" alt="Science Tasin">
+            </div>
+            <div class="right">
+                <span>타신의 범용 프로그래밍 지식 (UPKT)</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="options">
+            <li><a class="active" href="main_ko.html">로그인</a></li>
+            <li><a href="Language.html">언어</a></li>
+            <div class="listing">
+                <img class="flagicon" src="SRC/Flags/Korea Republic.png" alt="대한민국">
+            </div>
+            <div class="listing">
+                <span>한국어</span>
+            </div>
+        </ul>
+    </nav>
+    <main class="login">
+        <div class="page" id="loginPage">
+            <h2>포트폴리오 생성을 위해 로그인하세요</h2>
+            <label class="c_loginlabel">이메일:</label>
+            <input type="email" id="email" placeholder="이메일을 입력하세요">
+            <label class="c_loginlabel">비밀번호:</label>
+            <input type="password" id="password" placeholder="비밀번호를 입력하세요">
+            <button onclick="login()">로그인</button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="my_web" content="this is my website">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/en_font.css">
+
+    <title>Portfolio page</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="container">
+            <div class="left">
+                <img class="icon" src="SRC/ScienceMe_profilE.png" alt="Science Tasin">
+            </div>
+            <div class="right">
+                <span>Universal Programming Knowledge of Tasin (UPKT)</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="options">
+            <li><a href="main.html">Login</a></li>
+            <li><a class="active" href="portfolio.html">Portfolio</a></li>
+            <div class="listing">
+                <img class="flagicon" src="SRC/Flags/USA.png" alt="USA">
+            </div>
+            <div class="listing">
+                <span>English</span>
+            </div>
+        </ul>
+    </nav>
+    <main class="portfolio_page">
+        <div class="page" id="portfolioPage">
+            <h2>Portfolio Information</h2>
+
+            <section>
+                <h3>Personal Information</h3>
+                <label>Full Name:</label>
+                <input type="text" id="name" placeholder="John Doe">
+                <label>Contact Information:</label>
+                <input type="text" id="contact" placeholder="Email or Phone">
+                <label>Upload Photo:</label>
+                <input type="file" id="photo" accept="image/*">
+                <label>Short Bio:</label>
+                <textarea id="bio" placeholder="A short introduction about yourself"></textarea>
+            </section>
+
+            <section>
+                <h3>Skills</h3>
+                <label>Soft Skills:</label>
+                <input type="text" id="softSkills" placeholder="e.g., Leadership, Communication">
+                <label>Technical Skills:</label>
+                <input type="text" id="techSkills" placeholder="e.g., C, Java, HTML">
+            </section>
+
+            <section>
+                <h3>Academic Background (Optional)</h3>
+                <label>Institute Name:</label>
+                <input type="text" id="institute">
+                <label>Degree/Program:</label>
+                <input type="text" id="degree">
+                <label>Year:</label>
+                <input type="text" id="year">
+            </section>
+
+            <section>
+                <h3>Work Experience</h3>
+                <label>Company Name:</label>
+                <input type="text" id="company">
+                <label>Job Duration:</label>
+                <input type="text" id="duration">
+                <label>Job Responsibilities:</label>
+                <textarea id="responsibility"></textarea>
+            </section>
+
+            <section>
+                <h3>Projects/Publications (Optional)</h3>
+                <label>Title:</label>
+                <input type="text" id="projectTitle">
+                <label>Description:</label>
+                <textarea id="projectDesc"></textarea>
+                <label>Link:</label>
+                <input type="url" id="projectLink">
+            </section>
+
+            <button onclick="printPortfolio()">Generate Final Portfolio</button>
+        </div>
+        <div id="portfolioPreview">
+            <h2>Portfolio Preview</h2>
+            <h3>Start filling out the form to see your portfolio preview here.</h3>
+        </div>
+
+        <script src="JS/main.js"></script>
+
+    </main>
+</body>
+
+</html>

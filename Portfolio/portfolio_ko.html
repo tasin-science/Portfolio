@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="my_web" content="this is my website">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/ko_font.css">
+
+    <title>포트폴리오 페이지</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="container">
+            <div class="left">
+                <img class="icon" src="SRC/ScienceMe_profilE.png" alt="Science Tasin">
+            </div>
+            <div class="right">
+                <span>타신의 범용 프로그래밍 지식 (UPKT)</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="options">
+            <li><a href="main_ko.html">로그인</a></li>
+            <li><a class="active" href="portfolio_ko.html">포트폴리오</a></li>
+            <div class="listing">
+                <img class="flagicon" src="SRC/Flags/Korea Republic.png" alt="대한민국">
+            </div>
+            <div class="listing">
+                <span>한국어</span>
+            </div>
+        </ul>
+    </nav>
+    <main class="portfolio_page">
+        <div class="page" id="portfolioPage">
+            <h2>포트폴리오 정보</h2>
+
+            <section>
+                <h3>개인 정보</h3>
+                <label>이름:</label>
+                <input type="text" id="name" placeholder="홍길동">
+                <label>연락처:</label>
+                <input type="text" id="contact" placeholder="이메일 또는 전화번호">
+                <label>사진 업로드:</label>
+                <input type="file" id="photo" accept="image/*">
+                <label>자기소개:</label>
+                <textarea id="bio" placeholder="자신에 대한 간단한 소개"></textarea>
+            </section>
+
+            <section>
+                <h3>스킬</h3>
+                <label>소프트 스킬:</label>
+                <input type="text" id="softSkills" placeholder="예: 리더십, 커뮤니케이션">
+                <label>기술 스킬:</label>
+                <input type="text" id="techSkills" placeholder="예: C, Java, HTML">
+            </section>
+
+            <section>
+                <h3>학력 (선택사항)</h3>
+                <label>학교명:</label>
+                <input type="text" id="institute">
+                <label>학위/전공:</label>
+                <input type="text" id="degree">
+                <label>년도:</label>
+                <input type="text" id="year">
+            </section>
+
+            <section>
+                <h3>경력</h3>
+                <label>회사명:</label>
+                <input type="text" id="company">
+                <label>근무 기간:</label>
+                <input type="text" id="duration">
+                <label>담당 업무:</label>
+                <textarea id="responsibility"></textarea>
+            </section>
+
+            <section>
+                <h3>프로젝트/출판물 (선택사항)</h3>
+                <label>제목:</label>
+                <input type="text" id="projectTitle">
+                <label>설명:</label>
+                <textarea id="projectDesc"></textarea>
+                <label>링크:</label>
+                <input type="url" id="projectLink">
+            </section>
+
+            <button onclick="printPortfolio()">최종 포트폴리오 생성</button>
+        </div>
+        <div id="portfolioPreview">
+            <h2>포트폴리오 미리보기</h2>
+            <h3>폼을 작성하면 여기에 포트폴리오 미리보기가 표시됩니다.</h3>
+        </div>
+
+        <script src="JS/main_ko.js"></script>
+
+    </main>
+</body>
+
+</html>

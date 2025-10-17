@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="my_web" content="这是我的网站">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/zh_font.css">
+
+    <title>作品集页面</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="container">
+            <div class="left">
+                <img class="icon" src="SRC/ScienceMe_profilE.png" alt="Science Tasin">
+            </div>
+            <div class="right">
+                <span>Tasin的通用编程知识 (UPKT)</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="options">
+            <li><a href="main_zh.html">登录</a></li>
+            <li><a class="active" href="portfolio_zh.html">作品集</a></li>
+            <div class="listing">
+                <img class="flagicon" src="SRC/Flags/China People Republic.png" alt="中国">
+            </div>
+            <div class="listing">
+                <span>中文</span>
+            </div>
+        </ul>
+    </nav>
+    <main class="portfolio_page">
+        <div class="page" id="portfolioPage">
+            <h2>作品集信息</h2>
+
+            <section>
+                <h3>个人信息</h3>
+                <label>姓名:</label>
+                <input type="text" id="name" placeholder="张三">
+                <label>联系方式:</label>
+                <input type="text" id="contact" placeholder="邮箱或电话">
+                <label>上传照片:</label>
+                <input type="file" id="photo" accept="image/*">
+                <label>个人简介:</label>
+                <textarea id="bio" placeholder="关于自己的简短介绍"></textarea>
+            </section>
+
+            <section>
+                <h3>技能</h3>
+                <label>软技能:</label>
+                <input type="text" id="softSkills" placeholder="例如：领导力、沟通能力">
+                <label>技术技能:</label>
+                <input type="text" id="techSkills" placeholder="例如：C语言、Java、HTML">
+            </section>
+
+            <section>
+                <h3>教育背景（可选）</h3>
+                <label>学校名称:</label>
+                <input type="text" id="institute">
+                <label>学位/专业:</label>
+                <input type="text" id="degree">
+                <label>年份:</label>
+                <input type="text" id="year">
+            </section>
+
+            <section>
+                <h3>工作经历</h3>
+                <label>公司名称:</label>
+                <input type="text" id="company">
+                <label>工作时间:</label>
+                <input type="text" id="duration">
+                <label>工作职责:</label>
+                <textarea id="responsibility"></textarea>
+            </section>
+
+            <section>
+                <h3>项目/出版物（可选）</h3>
+                <label>标题:</label>
+                <input type="text" id="projectTitle">
+                <label>描述:</label>
+                <textarea id="projectDesc"></textarea>
+                <label>链接:</label>
+                <input type="url" id="projectLink">
+            </section>
+
+            <button onclick="printPortfolio()">生成最终作品集</button>
+        </div>
+        <div id="portfolioPreview">
+            <h2>作品集预览</h2>
+            <h3>开始填写表单以在此处查看您的作品集预览。</h3>
+        </div>
+
+        <script src="JS/main_zh.js"></script>
+
+    </main>
+</body>
+
+</html>

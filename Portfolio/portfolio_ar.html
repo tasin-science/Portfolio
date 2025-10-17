@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="my_web" content="this is my website">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/ar_font.css">
+
+    <title>صفحة السيرة الذاتية</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="container">
+            <div class="left">
+                <img class="icon" src="SRC/ScienceMe_profilE.png" alt="Science Tasin">
+            </div>
+            <div class="right">
+                <span>المعرفة البرمجية العالمية لتاسين (UPKT)</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="options">
+            <li><a href="main_ar.html">تسجيل الدخول</a></li>
+            <li><a class="active" href="portfolio_ar.html">السيرة الذاتية</a></li>
+            <div class="listing">
+                <img class="flagicon" src="SRC/Flags/Arab League.png" alt="جامعة الدول العربية">
+            </div>
+            <div class="listing">
+                <span>العربية</span>
+            </div>
+        </ul>
+    </nav>
+    <main class="portfolio_page">
+        <div class="page" id="portfolioPage">
+            <h2>معلومات السيرة الذاتية</h2>
+
+            <section>
+                <h3>المعلومات الشخصية</h3>
+                <label>الاسم الكامل:</label>
+                <input type="text" id="name" placeholder="أحمد محمد">
+                <label>معلومات الاتصال:</label>
+                <input type="text" id="contact" placeholder="البريد الإلكتروني أو الهاتف">
+                <label>تحميل الصورة:</label>
+                <input type="file" id="photo" accept="image/*">
+                <label>نبذة مختصرة:</label>
+                <textarea id="bio" placeholder="مقدمة قصيرة عن نفسك"></textarea>
+            </section>
+
+            <section>
+                <h3>المهارات</h3>
+                <label>المهارات الشخصية:</label>
+                <input type="text" id="softSkills" placeholder="مثل: القيادة، التواصل">
+                <label>المهارات التقنية:</label>
+                <input type="text" id="techSkills" placeholder="مثل: C، Java، HTML">
+            </section>
+
+            <section>
+                <h3>الخلفية الأكاديمية (اختياري)</h3>
+                <label>اسم المؤسسة:</label>
+                <input type="text" id="institute">
+                <label>الدرجة/البرنامج:</label>
+                <input type="text" id="degree">
+                <label>السنة:</label>
+                <input type="text" id="year">
+            </section>
+
+            <section>
+                <h3>الخبرة العملية</h3>
+                <label>اسم الشركة:</label>
+                <input type="text" id="company">
+                <label>مدة العمل:</label>
+                <input type="text" id="duration">
+                <label>المسؤوليات الوظيفية:</label>
+                <textarea id="responsibility"></textarea>
+            </section>
+
+            <section>
+                <h3>المشاريع/المنشورات (اختياري)</h3>
+                <label>العنوان:</label>
+                <input type="text" id="projectTitle">
+                <label>الوصف:</label>
+                <textarea id="projectDesc"></textarea>
+                <label>الرابط:</label>
+                <input type="url" id="projectLink">
+            </section>
+
+            <button onclick="printPortfolio()">إنشاء السيرة الذاتية النهائية</button>
+        </div>
+        <div id="portfolioPreview">
+            <h2>معاينة السيرة الذاتية</h2>
+            <h3>ابدأ بملء النموذج لرؤية معاينة سيرتك الذاتية هنا.</h3>
+        </div>
+        <script src="JS/main_ar.js"></script>
+    </main>
+</body>
+
+</html>

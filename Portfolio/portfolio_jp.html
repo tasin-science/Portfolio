@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="my_web" content="this is my website">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/jp_font.css">
+
+    <title>ポートフォリオページ</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="container">
+            <div class="left">
+                <img class="icon" src="SRC/ScienceMe_profilE.png" alt="Science Tasin">
+            </div>
+            <div class="right">
+                <span>タシンのユニバーサルプログラミング知識 (UPKT)</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="options">
+            <li><a href="main_jp.html">ログイン</a></li>
+            <li><a class="active" href="portfolio_jp.html">ポートフォリオ</a></li>
+            <div class="listing">
+                <img class="flagicon" src="SRC/Flags/Japan.png" alt="日本">
+            </div>
+            <div class="listing">
+                <span>日本語</span>
+            </div>
+        </ul>
+    </nav>
+    <main class="portfolio_page">
+        <div class="page" id="portfolioPage">
+            <h2>ポートフォリオ情報</h2>
+
+            <section>
+                <h3>個人情報</h3>
+                <label>氏名:</label>
+                <input type="text" id="name" placeholder="山田 太郎">
+                <label>連絡先:</label>
+                <input type="text" id="contact" placeholder="メールアドレスまたは電話番号">
+                <label>写真をアップロード:</label>
+                <input type="file" id="photo" accept="image/*">
+                <label>自己紹介:</label>
+                <textarea id="bio" placeholder="自分についての簡単な紹介"></textarea>
+            </section>
+
+            <section>
+                <h3>スキル</h3>
+                <label>ソフトスキル:</label>
+                <input type="text" id="softSkills" placeholder="例：リーダーシップ、コミュニケーション">
+                <label>技術スキル:</label>
+                <input type="text" id="techSkills" placeholder="例：C、Java、HTML">
+            </section>
+
+            <section>
+                <h3>学歴（任意）</h3>
+                <label>学校名:</label>
+                <input type="text" id="institute">
+                <label>学位/プログラム:</label>
+                <input type="text" id="degree">
+                <label>年度:</label>
+                <input type="text" id="year">
+            </section>
+
+            <section>
+                <h3>職務経験</h3>
+                <label>会社名:</label>
+                <input type="text" id="company">
+                <label>勤務期間:</label>
+                <input type="text" id="duration">
+                <label>担当業務:</label>
+                <textarea id="responsibility"></textarea>
+            </section>
+
+            <section>
+                <h3>プロジェクト/出版物（任意）</h3>
+                <label>タイトル:</label>
+                <input type="text" id="projectTitle">
+                <label>説明:</label>
+                <textarea id="projectDesc"></textarea>
+                <label>リンク:</label>
+                <input type="url" id="projectLink">
+            </section>
+
+            <button onclick="printPortfolio()">最終ポートフォリオを生成</button>
+        </div>
+        <div id="portfolioPreview">
+            <h2>ポートフォリオプレビュー</h2>
+            <h3>フォームに入力すると、ここにポートフォリオのプレビューが表示されます。</h3>
+        </div>
+
+        <script src="JS/main_jp.js"></script>
+
+    </main>
+</body>
+
+</html>

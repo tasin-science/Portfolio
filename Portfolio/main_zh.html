@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="my_web" content="这是我的网站">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/zh_font.css">
+    <script src="JS/main_zh.js"></script>
+
+    <title>登录页面</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="container">
+            <div class="left">
+                <img class="icon" src="SRC/ScienceMe_profilE.png" alt="Science Tasin">
+            </div>
+            <div class="right">
+                <span>Tasin的通用编程知识 (UPKT)</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="options">
+            <li><a class="active" href="main_zh.html">登录</a></li>
+            <li><a href="Language.html">语言</a></li>
+            <div class="listing">
+                <img class="flagicon" src="SRC/Flags/China People Republic.png" alt="中国">
+            </div>
+            <div class="listing">
+                <span>中文</span>
+            </div>
+        </ul>
+    </nav>
+    <main class="login">
+        <div class="page" id="loginPage">
+            <h2>登录生成您的作品集</h2>
+            <label class="c_loginlabel">邮箱:</label>
+            <input type="email" id="email" placeholder="输入您的邮箱">
+            <label class="c_loginlabel">密码:</label>
+            <input type="password" id="password" placeholder="输入您的密码">
+            <button onclick="login()">登录</button>
+        </div>
+    </main>
+</body>
+
+</html>
