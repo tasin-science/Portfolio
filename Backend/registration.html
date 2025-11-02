@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Task 3 | Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: radial-gradient(circle at top, #151928, #0c0f1a 55%, #040507 90%);
+      --accent: #4ade80;
+      --card: rgba(12, 15, 26, 0.75);
+    }
+    * { box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .bubble {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: rgba(74, 222, 128, 0.06);
+      border-radius: 50%;
+      animation: float 12s ease-in-out infinite;
+      filter: blur(2px);
+    }
+    .bubble:nth-child(1){ top: 5%; left: 10%; animation-delay: -2s; }
+    .bubble:nth-child(2){ bottom: 10%; right: 12%; width: 160px; height: 160px; animation-delay: -4s;}
+    @keyframes float {
+      0%,100% { transform: translateY(0) }
+      50% { transform: translateY(-25px) }
+    }
+    .card {
+      position: relative;
+      width: 360px;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.04);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
+      padding: 28px 26px 26px;
+      color: #fff;
+      animation: pop 0.6s ease;
+      box-shadow: 0 18px 50px rgba(0,0,0,.25);
+    }
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(30px) scale(.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    h1 {
+      font-size: 1.35rem;
+      margin: 0 0 3px;
+    }
+    p.subtitle {
+      margin: 0 0 18px;
+      font-size: .78rem;
+      opacity: .7;
+    }
+    label { display: block; font-size: .78rem; margin-bottom: 4px; }
+    input {
+      width: 100%;
+      padding: 10px 11px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.05);
+      outline: none;
+      background: rgba(3,6,12,.45);
+      color: #fff;
+      margin-bottom: 14px;
+      transition: border .2s, transform .2s;
+    }
+    input:focus {
+      border: 1px solid rgba(74,222,128,.7);
+      transform: translateY(-1.5px);
+    }
+    button {
+      width: 100%;
+      background: linear-gradient(120deg, #5eead4, #22c55e);
+      border: 0;
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: #020617;
+      font-weight: 600;
+      font-size: .85rem;
+      cursor: pointer;
+      transition: transform .15s;
+    }
+    button:hover { transform: translateY(-1.5px); }
+    .alt {
+      margin-top: 16px;
+      font-size: .75rem;
+      text-align: center;
+      opacity: .75;
+    }
+    .alt a { color: #5eead4; text-decoration: none; }
+    .header-tag {
+      font-size: .65rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      background: rgba(94,234,212,.16);
+      width: fit-content;
+      padding: 3px 8px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+
+  <div class="card">
+    <div class="header-tag">Lab Task 3 • Portfolio System</div>
+    <h1>Create account</h1>
+    <p class="subtitle">Register to generate and save your resume.</p>
+
+    <form action="register.php" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p class="alt">Already registered? <a href="login.html">Login here</a></p>
+  </div>
+</body>
+</html>

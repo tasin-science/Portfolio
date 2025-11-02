@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Task 3 | Login</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, #020617 0%, #0f172a 48%, #020617 90%);
+      font-family: "Segoe UI", sans-serif;
+      overflow: hidden;
+    }
+    .ring {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border: 1px solid rgba(148, 163, 184, .12);
+      border-radius: 50%;
+      animation: spin 14s linear infinite;
+    }
+    .ring:nth-child(1){ top: -80px; left: -60px; }
+    .ring:nth-child(2){ bottom: -100px; right: -100px; animation-duration: 18s; }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .card {
+      position: relative;
+      width: 350px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 18px;
+      padding: 26px 22px 22px;
+      color: #e2e8f0;
+      backdrop-filter: blur(12px);
+      animation: pop .6s ease;
+      box-shadow: 0 18px 40px rgba(0,0,0,.25);
+    }
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 { margin-top: 0; }
+    label { font-size: .78rem; display: block; margin-bottom: 4px; }
+    input {
+      width: 100%;
+      padding: 9px 10px;
+      background: rgba(2,6,23,.45);
+      border: 1px solid rgba(148,163,184,.16);
+      border-radius: 10px;
+      outline: none;
+      margin-bottom: 14px;
+      color: #fff;
+      transition: .2s;
+    }
+    input:focus {
+      border: 1px solid rgba(45,212,191,1);
+      transform: translateY(-1px);
+    }
+    button {
+      width: 100%;
+      background: linear-gradient(120deg, #22d3ee, #22c55e);
+      border: none;
+      padding: 9px 0;
+      color: #020617;
+      font-weight: 600;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: .15s;
+    }
+    button:hover { transform: translateY(-1px); }
+    .small { margin-top: 15px; font-size: .7rem; text-align: center; opacity: .75; }
+    .small a { color: #22d3ee; text-decoration: none; }
+    .tag {
+      display: inline-block;
+      background: rgba(34, 211, 238, .14);
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: .63rem;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="ring"></div>
+  <div class="ring"></div>
+  <div class="card">
+    <div class="tag">Lab Task 3</div>
+    <h2>Welcome back</h2>
+    <p style="font-size:.75rem; opacity:.75; margin-top:-5px; margin-bottom:18px;">
+      Login to continue editing your resume.
+    </p>
+    <form action="login.php" method="POST">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p class="small">No account yet? <a href="registration.html">Register</a></p>
+  </div>
+</body>
+</html>
